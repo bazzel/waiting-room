@@ -20,9 +20,17 @@ body {
   @extend .sans;
 }
 
+h1 {
+  @include adjust-font-size-to(ms(2));
+}
+
+h2 {
+  @include adjust-font-size-to(ms(1));
+}
+
 #container {
   // @include pad(3,3);
-  // @include grid;
+  @include grid;
 }
 
 header {}

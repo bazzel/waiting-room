@@ -8,6 +8,7 @@ gem 'serve', '1.5.1'
 # Use Compass and Sass
 gem 'compass'
 gem "compass-susy-plugin", "~> 0.9"
+gem 'modular-scale', '0.0.4'
 
 # Markdown and Textile
 # gem 'rdiscount' # Markdown
