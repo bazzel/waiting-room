@@ -7,6 +7,7 @@ gem 'serve', '1.5.1'
 
 # Use Compass and Sass
 gem 'compass'
+gem "compass-susy-plugin", "~> 0.9"
 
 # Markdown and Textile
 # gem 'rdiscount' # Markdown

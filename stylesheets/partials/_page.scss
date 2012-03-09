@@ -16,7 +16,10 @@ body, select, input, textarea {
 
 body {}
 
-#container {}
+#container {
+  // @include pad(3,3);
+  @include grid;
+}
 
 header {}
 

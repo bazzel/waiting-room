@@ -1,0 +1,17 @@
+@mixin grid(
+  $column-color   : $column-color
+, $gutter-color   : $gutter-color
+, $baseline-color : $baseline-color
+){
+  @include grid-background(
+    $total-cols
+  , $col-width
+  , $gutter-width
+  , $base-line-height
+  , $side-gutter-width
+  , $column-color
+  , $gutter-color
+  , $baseline-color
+  , $grid-background-force-fluid);
+}
+

@@ -6,7 +6,8 @@
 
 // Now, you can simply include everything
 // (except print and helpers) by uncommeting this line
-@include h5bp-normalize;
+@include global-reset;
+// @include h5bp-normalize;
 
 // Or, you can import the "overrides" partial if
 // you want more control over individual mixins

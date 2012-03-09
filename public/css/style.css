@@ -1,319 +1,133 @@
-/* line 34, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
-  display: block;
-}
-
-/* line 35, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-audio, canvas, video {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-}
-
-/* line 36, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-audio:not([controls]) {
-  display: none;
-}
-
-/* line 37, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-[hidden] {
-  display: none;
-}
-
-/* line 48, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-html {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
   font-size: 100%;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
-/* line 50, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-html, button, input, select, textarea {
-  font-family: sans-serif;
-  color: #222222;
-}
-
-/* line 52, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
 body {
-  margin: 0;
-  font-size: 1em;
-  line-height: 1.4;
+  line-height: 1;
 }
 
-/* line 62, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-::-moz-selection {
-  background: #ff5e99;
-  color: white;
-  text-shadow: none;
-}
-
-/* line 63, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-::selection {
-  background: #ff5e99;
-  color: white;
-  text-shadow: none;
-}
-
-/* line 71, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-a {
-  color: #0000ee;
-}
-
-/* line 72, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-a:visited {
-  color: #551a8b;
-}
-
-/* line 73, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-a:hover {
-  color: #0066ee;
-}
-
-/* line 74, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-a:focus {
-  outline: thin dotted;
-}
-
-/* line 77, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-a:hover, a:active {
-  outline: 0;
-}
-
-/* line 85, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-abbr[title] {
-  border-bottom: 1px dotted;
-}
-
-/* line 87, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-b, strong {
-  font-weight: bold;
-}
-
-/* line 89, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-blockquote {
-  margin: 1em 40px;
-}
-
-/* line 91, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-dfn {
-  font-style: italic;
-}
-
-/* line 93, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-/* line 95, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-ins {
-  background: #ff9;
-  color: #000;
-  text-decoration: none;
-}
-
-/* line 97, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-mark {
-  background: #ff0;
-  color: #000;
-  font-style: italic;
-  font-weight: bold;
-}
-
-/* line 100, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-pre, code, kbd, samp {
-  font-family: monospace, serif;
-  _font-family: 'courier new', monospace;
-  font-size: 1em;
-}
-
-/* line 103, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-pre {
-  white-space: pre;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-}
-
-/* line 105, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-q {
-  quotes: none;
-}
-
-/* line 106, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-/* line 108, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-small {
-  font-size: 85%;
-}
-
-/* line 111, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-sub, sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-/* line 112, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-sup {
-  top: -0.5em;
-}
-
-/* line 113, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-sub {
-  bottom: -0.25em;
-}
-
-/* line 121, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-ul, ol {
-  margin: 1em 0;
-  padding: 0 0 0 40px;
-}
-
-/* line 122, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-dd {
-  margin: 0 0 0 40px;
-}
-
-/* line 123, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-nav ul, nav ol {
+ol, ul {
   list-style: none;
-  list-style-image: none;
-  margin: 0;
-  padding: 0;
 }
 
-/* line 134, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-img {
-  border: 0;
-  -ms-interpolation-mode: bicubic;
-  vertical-align: middle;
-}
-
-/* line 138, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-svg:not(:root) {
-  overflow: hidden;
-}
-
-/* line 146, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-figure {
-  margin: 0;
-}
-
-/* line 154, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-form {
-  margin: 0;
-}
-
-/* line 155, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/* line 158, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-label {
-  cursor: pointer;
-}
-
-/* line 163, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-legend {
-  border: 0;
-  *margin-left: -7px;
-  padding: 0;
-  white-space: normal;
-}
-
-/* line 169, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-button, input, select, textarea {
-  font-size: 100%;
-  margin: 0;
-  vertical-align: baseline;
-  *vertical-align: middle;
-}
-
-/* line 173, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-button, input {
-  line-height: normal;
-}
-
-/* line 179, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-button, input[type="button"], input[type="reset"], input[type="submit"] {
-  cursor: pointer;
-  -webkit-appearance: button;
-  *overflow: visible;
-}
-
-/* line 183, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-button[disabled], input[disabled] {
-  cursor: default;
-}
-
-/* line 187, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-input[type="checkbox"], input[type="radio"] {
-  box-sizing: border-box;
-  padding: 0;
-  *width: 13px;
-  *height: 13px;
-}
-
-/* line 188, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-input[type="search"] {
-  -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-}
-
-/* line 189, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
-  -webkit-appearance: none;
-}
-
-/* line 193, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-button::-moz-focus-inner, input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-/* line 198, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-textarea {
-  overflow: auto;
-  vertical-align: top;
-  resize: vertical;
-}
-
-/* line 202, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-input:invalid, textarea:invalid {
-  background-color: #f0dddd;
-}
-
-/* line 210, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 211, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_normalize.scss */
-td {
-  vertical-align: top;
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
 }
 
-/* line 7, ../../stylesheets/partials/_page.scss */
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
 body, select, input, textarea {
   color: #222222;
 }
 
-/* line 7, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_helpers.scss */
+#container {
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(5%, #ffd95f), color-stop(5%, rgba(255, 217, 95, 0))), -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0.5%, #ffd95f), color-stop(0.5%, #ffffff), color-stop(5.05556%, #ffffff), color-stop(5.05556%, #ffd95f), color-stop(6.05556%, #ffd95f), color-stop(6.05556%, #ffffff), color-stop(10.61111%, #ffffff), color-stop(10.61111%, #ffd95f), color-stop(11.61111%, #ffd95f), color-stop(11.61111%, #ffffff), color-stop(16.16667%, #ffffff), color-stop(16.16667%, #ffd95f), color-stop(17.16667%, #ffd95f), color-stop(17.16667%, #ffffff), color-stop(21.72222%, #ffffff), color-stop(21.72222%, #ffd95f), color-stop(22.72222%, #ffd95f), color-stop(22.72222%, #ffffff), color-stop(27.27778%, #ffffff), color-stop(27.27778%, #ffd95f), color-stop(28.27778%, #ffd95f), color-stop(28.27778%, #ffffff), color-stop(32.83333%, #ffffff), color-stop(32.83333%, #ffd95f), color-stop(33.83333%, #ffd95f), color-stop(33.83333%, #ffffff), color-stop(38.38889%, #ffffff), color-stop(38.38889%, #ffd95f), color-stop(39.38889%, #ffd95f), color-stop(39.38889%, #ffffff), color-stop(43.94444%, #ffffff), color-stop(43.94444%, #ffd95f), color-stop(44.94444%, #ffd95f), color-stop(44.94444%, #ffffff), color-stop(49.5%, #ffffff), color-stop(49.5%, #ffd95f), color-stop(50.5%, #ffd95f), color-stop(50.5%, #ffffff), color-stop(55.05556%, #ffffff), color-stop(55.05556%, #ffd95f), color-stop(56.05556%, #ffd95f), color-stop(56.05556%, #ffffff), color-stop(60.61111%, #ffffff), color-stop(60.61111%, #ffd95f), color-stop(61.61111%, #ffd95f), color-stop(61.61111%, #ffffff), color-stop(66.16667%, #ffffff), color-stop(66.16667%, #ffd95f), color-stop(67.16667%, #ffd95f), color-stop(67.16667%, #ffffff), color-stop(71.72222%, #ffffff), color-stop(71.72222%, #ffd95f), color-stop(72.72222%, #ffd95f), color-stop(72.72222%, #ffffff), color-stop(77.27778%, #ffffff), color-stop(77.27778%, #ffd95f), color-stop(78.27778%, #ffd95f), color-stop(78.27778%, #ffffff), color-stop(82.83333%, #ffffff), color-stop(82.83333%, #ffd95f), color-stop(83.83333%, #ffd95f), color-stop(83.83333%, #ffffff), color-stop(88.38889%, #ffffff), color-stop(88.38889%, #ffd95f), color-stop(89.38889%, #ffd95f), color-stop(89.38889%, #ffffff), color-stop(93.94444%, #ffffff), color-stop(93.94444%, #ffd95f), color-stop(94.94444%, #ffd95f), color-stop(94.94444%, #ffffff), color-stop(99.5%, #ffffff), color-stop(99.5%, #ffd95f), color-stop(100%, #ffd95f));
+  background-image: -webkit-linear-gradient(bottom, #ffd95f 5%, rgba(255, 217, 95, 0) 5%), -webkit-linear-gradient(left, #ffd95f 0.5%, #ffffff 0.5%, #ffffff 5.05556%, #ffd95f 5.05556%, #ffd95f 6.05556%, #ffffff 6.05556%, #ffffff 10.61111%, #ffd95f 10.61111%, #ffd95f 11.61111%, #ffffff 11.61111%, #ffffff 16.16667%, #ffd95f 16.16667%, #ffd95f 17.16667%, #ffffff 17.16667%, #ffffff 21.72222%, #ffd95f 21.72222%, #ffd95f 22.72222%, #ffffff 22.72222%, #ffffff 27.27778%, #ffd95f 27.27778%, #ffd95f 28.27778%, #ffffff 28.27778%, #ffffff 32.83333%, #ffd95f 32.83333%, #ffd95f 33.83333%, #ffffff 33.83333%, #ffffff 38.38889%, #ffd95f 38.38889%, #ffd95f 39.38889%, #ffffff 39.38889%, #ffffff 43.94444%, #ffd95f 43.94444%, #ffd95f 44.94444%, #ffffff 44.94444%, #ffffff 49.5%, #ffd95f 49.5%, #ffd95f 50.5%, #ffffff 50.5%, #ffffff 55.05556%, #ffd95f 55.05556%, #ffd95f 56.05556%, #ffffff 56.05556%, #ffffff 60.61111%, #ffd95f 60.61111%, #ffd95f 61.61111%, #ffffff 61.61111%, #ffffff 66.16667%, #ffd95f 66.16667%, #ffd95f 67.16667%, #ffffff 67.16667%, #ffffff 71.72222%, #ffd95f 71.72222%, #ffd95f 72.72222%, #ffffff 72.72222%, #ffffff 77.27778%, #ffd95f 77.27778%, #ffd95f 78.27778%, #ffffff 78.27778%, #ffffff 82.83333%, #ffd95f 82.83333%, #ffd95f 83.83333%, #ffffff 83.83333%, #ffffff 88.38889%, #ffd95f 88.38889%, #ffd95f 89.38889%, #ffffff 89.38889%, #ffffff 93.94444%, #ffd95f 93.94444%, #ffd95f 94.94444%, #ffffff 94.94444%, #ffffff 99.5%, #ffd95f 99.5%, #ffd95f 100%);
+  background-image: -moz-linear-gradient(bottom, #ffd95f 5%, rgba(255, 217, 95, 0) 5%), -moz-linear-gradient(left, #ffd95f 0.5%, #ffffff 0.5%, #ffffff 5.05556%, #ffd95f 5.05556%, #ffd95f 6.05556%, #ffffff 6.05556%, #ffffff 10.61111%, #ffd95f 10.61111%, #ffd95f 11.61111%, #ffffff 11.61111%, #ffffff 16.16667%, #ffd95f 16.16667%, #ffd95f 17.16667%, #ffffff 17.16667%, #ffffff 21.72222%, #ffd95f 21.72222%, #ffd95f 22.72222%, #ffffff 22.72222%, #ffffff 27.27778%, #ffd95f 27.27778%, #ffd95f 28.27778%, #ffffff 28.27778%, #ffffff 32.83333%, #ffd95f 32.83333%, #ffd95f 33.83333%, #ffffff 33.83333%, #ffffff 38.38889%, #ffd95f 38.38889%, #ffd95f 39.38889%, #ffffff 39.38889%, #ffffff 43.94444%, #ffd95f 43.94444%, #ffd95f 44.94444%, #ffffff 44.94444%, #ffffff 49.5%, #ffd95f 49.5%, #ffd95f 50.5%, #ffffff 50.5%, #ffffff 55.05556%, #ffd95f 55.05556%, #ffd95f 56.05556%, #ffffff 56.05556%, #ffffff 60.61111%, #ffd95f 60.61111%, #ffd95f 61.61111%, #ffffff 61.61111%, #ffffff 66.16667%, #ffd95f 66.16667%, #ffd95f 67.16667%, #ffffff 67.16667%, #ffffff 71.72222%, #ffd95f 71.72222%, #ffd95f 72.72222%, #ffffff 72.72222%, #ffffff 77.27778%, #ffd95f 77.27778%, #ffd95f 78.27778%, #ffffff 78.27778%, #ffffff 82.83333%, #ffd95f 82.83333%, #ffd95f 83.83333%, #ffffff 83.83333%, #ffffff 88.38889%, #ffd95f 88.38889%, #ffd95f 89.38889%, #ffffff 89.38889%, #ffffff 93.94444%, #ffd95f 93.94444%, #ffd95f 94.94444%, #ffffff 94.94444%, #ffffff 99.5%, #ffd95f 99.5%, #ffd95f 100%);
+  background-image: -o-linear-gradient(bottom, #ffd95f 5%, rgba(255, 217, 95, 0) 5%), -o-linear-gradient(left, #ffd95f 0.5%, #ffffff 0.5%, #ffffff 5.05556%, #ffd95f 5.05556%, #ffd95f 6.05556%, #ffffff 6.05556%, #ffffff 10.61111%, #ffd95f 10.61111%, #ffd95f 11.61111%, #ffffff 11.61111%, #ffffff 16.16667%, #ffd95f 16.16667%, #ffd95f 17.16667%, #ffffff 17.16667%, #ffffff 21.72222%, #ffd95f 21.72222%, #ffd95f 22.72222%, #ffffff 22.72222%, #ffffff 27.27778%, #ffd95f 27.27778%, #ffd95f 28.27778%, #ffffff 28.27778%, #ffffff 32.83333%, #ffd95f 32.83333%, #ffd95f 33.83333%, #ffffff 33.83333%, #ffffff 38.38889%, #ffd95f 38.38889%, #ffd95f 39.38889%, #ffffff 39.38889%, #ffffff 43.94444%, #ffd95f 43.94444%, #ffd95f 44.94444%, #ffffff 44.94444%, #ffffff 49.5%, #ffd95f 49.5%, #ffd95f 50.5%, #ffffff 50.5%, #ffffff 55.05556%, #ffd95f 55.05556%, #ffd95f 56.05556%, #ffffff 56.05556%, #ffffff 60.61111%, #ffd95f 60.61111%, #ffd95f 61.61111%, #ffffff 61.61111%, #ffffff 66.16667%, #ffd95f 66.16667%, #ffd95f 67.16667%, #ffffff 67.16667%, #ffffff 71.72222%, #ffd95f 71.72222%, #ffd95f 72.72222%, #ffffff 72.72222%, #ffffff 77.27778%, #ffd95f 77.27778%, #ffd95f 78.27778%, #ffffff 78.27778%, #ffffff 82.83333%, #ffd95f 82.83333%, #ffd95f 83.83333%, #ffffff 83.83333%, #ffffff 88.38889%, #ffd95f 88.38889%, #ffd95f 89.38889%, #ffffff 89.38889%, #ffffff 93.94444%, #ffd95f 93.94444%, #ffd95f 94.94444%, #ffffff 94.94444%, #ffffff 99.5%, #ffd95f 99.5%, #ffd95f 100%);
+  background-image: -ms-linear-gradient(bottom, #ffd95f 5%, rgba(255, 217, 95, 0) 5%), -ms-linear-gradient(left, #ffd95f 0.5%, #ffffff 0.5%, #ffffff 5.05556%, #ffd95f 5.05556%, #ffd95f 6.05556%, #ffffff 6.05556%, #ffffff 10.61111%, #ffd95f 10.61111%, #ffd95f 11.61111%, #ffffff 11.61111%, #ffffff 16.16667%, #ffd95f 16.16667%, #ffd95f 17.16667%, #ffffff 17.16667%, #ffffff 21.72222%, #ffd95f 21.72222%, #ffd95f 22.72222%, #ffffff 22.72222%, #ffffff 27.27778%, #ffd95f 27.27778%, #ffd95f 28.27778%, #ffffff 28.27778%, #ffffff 32.83333%, #ffd95f 32.83333%, #ffd95f 33.83333%, #ffffff 33.83333%, #ffffff 38.38889%, #ffd95f 38.38889%, #ffd95f 39.38889%, #ffffff 39.38889%, #ffffff 43.94444%, #ffd95f 43.94444%, #ffd95f 44.94444%, #ffffff 44.94444%, #ffffff 49.5%, #ffd95f 49.5%, #ffd95f 50.5%, #ffffff 50.5%, #ffffff 55.05556%, #ffd95f 55.05556%, #ffd95f 56.05556%, #ffffff 56.05556%, #ffffff 60.61111%, #ffd95f 60.61111%, #ffd95f 61.61111%, #ffffff 61.61111%, #ffffff 66.16667%, #ffd95f 66.16667%, #ffd95f 67.16667%, #ffffff 67.16667%, #ffffff 71.72222%, #ffd95f 71.72222%, #ffd95f 72.72222%, #ffffff 72.72222%, #ffffff 77.27778%, #ffd95f 77.27778%, #ffd95f 78.27778%, #ffffff 78.27778%, #ffffff 82.83333%, #ffd95f 82.83333%, #ffd95f 83.83333%, #ffffff 83.83333%, #ffffff 88.38889%, #ffd95f 88.38889%, #ffd95f 89.38889%, #ffffff 89.38889%, #ffffff 93.94444%, #ffd95f 93.94444%, #ffd95f 94.94444%, #ffffff 94.94444%, #ffffff 99.5%, #ffd95f 99.5%, #ffd95f 100%);
+  background-image: linear-gradient(bottom, #ffd95f 5%, rgba(255, 217, 95, 0) 5%), linear-gradient(left, #ffd95f 0.5%, #ffffff 0.5%, #ffffff 5.05556%, #ffd95f 5.05556%, #ffd95f 6.05556%, #ffffff 6.05556%, #ffffff 10.61111%, #ffd95f 10.61111%, #ffd95f 11.61111%, #ffffff 11.61111%, #ffffff 16.16667%, #ffd95f 16.16667%, #ffd95f 17.16667%, #ffffff 17.16667%, #ffffff 21.72222%, #ffd95f 21.72222%, #ffd95f 22.72222%, #ffffff 22.72222%, #ffffff 27.27778%, #ffd95f 27.27778%, #ffd95f 28.27778%, #ffffff 28.27778%, #ffffff 32.83333%, #ffd95f 32.83333%, #ffd95f 33.83333%, #ffffff 33.83333%, #ffffff 38.38889%, #ffd95f 38.38889%, #ffd95f 39.38889%, #ffffff 39.38889%, #ffffff 43.94444%, #ffd95f 43.94444%, #ffd95f 44.94444%, #ffffff 44.94444%, #ffffff 49.5%, #ffd95f 49.5%, #ffd95f 50.5%, #ffffff 50.5%, #ffffff 55.05556%, #ffd95f 55.05556%, #ffd95f 56.05556%, #ffffff 56.05556%, #ffffff 60.61111%, #ffd95f 60.61111%, #ffd95f 61.61111%, #ffffff 61.61111%, #ffffff 66.16667%, #ffd95f 66.16667%, #ffd95f 67.16667%, #ffffff 67.16667%, #ffffff 71.72222%, #ffd95f 71.72222%, #ffd95f 72.72222%, #ffffff 72.72222%, #ffffff 77.27778%, #ffd95f 77.27778%, #ffd95f 78.27778%, #ffffff 78.27778%, #ffffff 82.83333%, #ffd95f 82.83333%, #ffd95f 83.83333%, #ffffff 83.83333%, #ffffff 88.38889%, #ffd95f 88.38889%, #ffd95f 89.38889%, #ffffff 89.38889%, #ffffff 93.94444%, #ffd95f 93.94444%, #ffd95f 94.94444%, #ffffff 94.94444%, #ffffff 99.5%, #ffd95f 99.5%, #ffd95f 100%);
+  -moz-background-size: 100% 24px, auto;
+  -webkit-background-size: 100% 24px, auto;
+  -o-background-size: 100% 24px, auto;
+  background-size: 100% 24px, auto;
+  background-position: left top;
+}
+
 .ir {
   display: block;
   border: 0;
@@ -325,18 +139,15 @@ body, select, input, textarea {
   direction: ltr;
   *line-height: 0;
 }
-/* line 26, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_helpers.scss */
 .ir br {
   display: none;
 }
 
-/* line 9, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_helpers.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
 }
 
-/* line 11, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_helpers.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -347,7 +158,6 @@ body, select, input, textarea {
   position: absolute;
   width: 1px;
 }
-/* line 45, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_helpers.scss */
 .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
   clip: auto;
   height: auto;
@@ -357,21 +167,17 @@ body, select, input, textarea {
   width: auto;
 }
 
-/* line 13, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_helpers.scss */
 .invisible {
   visibility: hidden;
 }
 
-/* line 55, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_helpers.scss */
 .clearfix:before, .clearfix:after {
   content: "";
   display: table;
 }
-/* line 56, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_helpers.scss */
 .clearfix:after {
   clear: both;
 }
-/* line 57, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_helpers.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -383,7 +189,6 @@ body, select, input, textarea {
   /* Style adjustments for viewports 768px and over go here */
 }
 @media print {
-  /* line 11, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_media.scss */
   * {
     background: transparent !important;
     color: black !important;
@@ -393,43 +198,35 @@ body, select, input, textarea {
     -ms-filter: none !important;
   }
 
-  /* line 12, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_media.scss */
   a, a:visited {
     text-decoration: underline;
   }
 
-  /* line 13, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_media.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 14, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_media.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
 
-  /* line 15, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_media.scss */
   .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
     content: "";
   }
 
-  /* line 16, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_media.scss */
   pre, blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 17, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_media.scss */
   thead {
     display: table-header-group;
   }
 
-  /* line 18, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_media.scss */
   tr, img {
     page-break-inside: avoid;
   }
 
-  /* line 19, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_media.scss */
   img {
     max-width: 100% !important;
   }
@@ -438,13 +235,11 @@ body, select, input, textarea {
     margin: 0.5cm;
 }
 
-  /* line 21, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_media.scss */
   p, h2, h3 {
     orphans: 3;
     widows: 3;
   }
 
-  /* line 22, ../../../../../.rvm/gems/ruby-1.9.3-p0@timoco-waitingroom/gems/compass-h5bp-0.0.5/stylesheets/h5bp/_media.scss */
   h2, h3 {
     page-break-after: avoid;
   }
