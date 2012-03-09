@@ -18,6 +18,7 @@ body, select, input, textarea {
 
 body {
   @extend .sans;
+  // @include grid;
 }
 
 h1 {
@@ -28,9 +29,13 @@ h2 {
   @include adjust-font-size-to(ms(1));
 }
 
+p {
+  @include rhythm(1,0,0,1);
+}
+
 #container {
-  // @include pad(3,3);
-  @include grid;
+  @include pad(4,4);
+  @include rhythm(4,0,0,4);
 }
 
 header {}

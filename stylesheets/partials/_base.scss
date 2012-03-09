@@ -2,6 +2,7 @@
 @import "compass/layout/grid-background";
 @import "compass/typography/vertical_rhythm";
 @import "compass/reset";
+@import "susy";
 @import "modular-scale";
 
 @import "mixins";
@@ -19,7 +20,7 @@
 //
 // $invalid-background-color: #f0dddd !default;
 
-// Susy
+// Susy:
 $total-cols             : 18;
 $gutter-width           : 1%;
 $side-gutter-width      : $gutter-width/2;
@@ -28,11 +29,11 @@ $column-color: white;
 $gutter-color: #FFD95F;
 $baseline-color: #FFD95F;
 
-// Fonts
+// Fonts:
 $base-font-size: 16px; // Used by Compass
-$base-line-height: 24px;  // Used by Compass
+$base-line-height: 20px;  // Used by Compass
 
-// modular scale
+// Modular scale:
 // $ratio: $golden;
 $base-size: $base-font-size;
 // $class-slug: ms;
