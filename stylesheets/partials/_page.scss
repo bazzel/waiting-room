@@ -23,6 +23,7 @@ body {
 
 h1 {
   @include adjust-font-size-to(ms(2));
+  @include replace-text('timoco_logo.png', left, center);
 }
 
 h2 {
@@ -35,12 +36,21 @@ p {
 
 #container {
   @include pad(4,4);
-  @include rhythm(4,0,0,4);
+  @include rhythm(3,0,0,3);
 }
 
-header {}
+header {
+  @include margin-trailer(1);
+  @extend .rounded-gradient-box;
+}
 
-#main {}
+#main {
+  padding: {
+    right: gutter();
+    left: gutter();
+  }
+  @extend .rounded-gradient-box;
+}
 
 footer {}
 
@@ -54,4 +64,26 @@ footer {}
 
 .mono {
   @include monospace-family;
+}
+
+.rounded-gradient-box {
+  background: #e6e9eb;
+  @include background-image(linear-gradient(lighten(#e6e9eb, 5%), darken(#e6e9eb, 5%)));
+  padding: {
+    right: gutter();
+    left: gutter();
+  }
+  border: {
+    style: solid;
+    color: #ccc;
+    right: {
+      width: 1px;
+    }
+    left: {
+      width: 1px;
+    }
+  }
+  @include h-borders(1px, .5);
+  @include border-radius;
+  @include single-box-shadow(white, 0, 1px, 0, 0, true);
 }

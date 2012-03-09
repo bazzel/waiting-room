@@ -1,5 +1,6 @@
 // This file must be imported before loading html5-boilerplate
 @import "compass/layout/grid-background";
+@import "compass/typography/text/replacement";
 @import "compass/typography/vertical_rhythm";
 @import "compass/reset";
 @import "susy";
@@ -22,7 +23,7 @@
 
 // Susy:
 $total-cols             : 18;
-$gutter-width           : 1%;
+$gutter-width           : 2%;
 $side-gutter-width      : $gutter-width/2;
 $col-width              : (100% - ($total-cols*$gutter-width))/$total-cols;
 $column-color: white;
