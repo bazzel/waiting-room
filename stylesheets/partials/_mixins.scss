@@ -15,3 +15,15 @@
   , $grid-background-force-fluid);
 }
 
+@mixin sans-family {
+  // font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+  font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+@mixin serif-family {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+@mixin monospace-family {
+  font-family: "Courier New", Courier, mono;
+}

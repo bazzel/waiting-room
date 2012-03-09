@@ -14,11 +14,15 @@ body, select, input, textarea {
 // Add your own custom styles below
 //-----------------------------------
 
-body {}
+@include establish-baseline;
+
+body {
+  @extend .sans;
+}
 
 #container {
   // @include pad(3,3);
-  @include grid;
+  // @include grid;
 }
 
 header {}
@@ -26,3 +30,15 @@ header {}
 #main {}
 
 footer {}
+
+.sans {
+  @include sans-family;
+}
+
+.serif {
+  @include serif-family;
+}
+
+.mono {
+  @include monospace-family;
+}
