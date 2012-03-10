@@ -17,7 +17,8 @@
 
 @mixin sans-family {
   // font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
-  font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  // font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  font-family: "myriad-pro",Arial,Helvetica,Tahoma,sans-serif
 }
 
 @mixin serif-family {
@@ -26,4 +27,55 @@
 
 @mixin monospace-family {
   font-family: "Courier New", Courier, mono;
+}
+
+// Creates a box with rounded (colored) border
+// and a background gradient with given color.
+// Gradient starts with a lighther variant of the color
+// when direction has a value of 'top-to-bottom'.
+// Otherwise the gradient starts with a darker and
+// ends with a lighter variant of the color.
+//
+//  $color     - the color used for the gradient and border.
+//  $direction - top-to-bottom|bottom-to-top
+@mixin rounded-gradient-box(
+  $color:     #e6e9eb
+, $direction: top-to-bottom
+) {
+  // $color: #F2D888;
+  // $color: #6BB7BF;
+  // $color: #BF5111;
+  // $color: #e6e9eb;
+  $from: lighten($color, 5%);
+  $to: darken($color, 5%);
+
+  @if $direction != top-to-bottom {
+    $from: darken($color, 5%);
+    $to: lighten($color, 5%);
+  }
+
+  // Of course this can only be accomplished by using Modernizr:
+  .cssgradients & {
+    @include background-image(linear-gradient($from, $to));
+  }
+  .no-cssgradients & {
+    @include filter-gradient($from, $to, vertical);
+  }
+  padding: {
+    right: gutter();
+    left: gutter();
+  }
+  border: {
+    style: solid;
+    color: darken($color, 10%);
+    right: {
+      width: 1px;
+    }
+    left: {
+      width: 1px;
+    }
+  }
+  @include h-borders(1px, .5);
+  @include border-radius;
+  @include single-box-shadow(lighten($color, 40%), 0, 1px, 0, 0, true);
 }

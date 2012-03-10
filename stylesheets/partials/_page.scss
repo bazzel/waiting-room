@@ -28,6 +28,7 @@ h1 {
 
 h2 {
   @include adjust-font-size-to(ms(1));
+  font-style: italic;
 }
 
 p {
@@ -41,7 +42,7 @@ p {
 
 header {
   @include margin-trailer(1);
-  @extend .rounded-gradient-box;
+  @include rounded-gradient-box;
 }
 
 #main {
@@ -49,7 +50,7 @@ header {
     right: gutter();
     left: gutter();
   }
-  @extend .rounded-gradient-box;
+  @include rounded-gradient-box(#e6e9eb, bottom-to-top);
 }
 
 footer {}
@@ -64,26 +65,4 @@ footer {}
 
 .mono {
   @include monospace-family;
-}
-
-.rounded-gradient-box {
-  background: #e6e9eb;
-  @include background-image(linear-gradient(lighten(#e6e9eb, 5%), darken(#e6e9eb, 5%)));
-  padding: {
-    right: gutter();
-    left: gutter();
-  }
-  border: {
-    style: solid;
-    color: #ccc;
-    right: {
-      width: 1px;
-    }
-    left: {
-      width: 1px;
-    }
-  }
-  @include h-borders(1px, .5);
-  @include border-radius;
-  @include single-box-shadow(white, 0, 1px, 0, 0, true);
 }
