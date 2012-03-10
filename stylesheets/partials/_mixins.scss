@@ -71,7 +71,7 @@
       width: 1px;
     }
   }
-  @include h-borders(1px, .5);
+  @include h-borders(1px, 1);
   @include border-radius;
   @include single-box-shadow(lighten($color, 40%), 0, 1px, 0, 0, true);
 }

@@ -16,20 +16,20 @@ body, select, input, textarea {
 @include establish-baseline;
 
 body {
+  // background: rgba($complement-accent-color, .25);
   // @include grid;
 }
 
 h1 {
-  @include adjust-font-size-to(ms(2));
+  @include adjust-font-size-to(ms(4));
   @include replace-text('timoco_logo.png', left, center);
 }
 
 h2 {
-  @include adjust-font-size-to(ms(1));
-  color: #E61E1E;
-  @include margin-leader(1);
+  @include adjust-font-size-to(ms(4));
+  color: $complement-support-color;
   text-align: center;
-  // font-style: italic;
+  @include margin-leader(1, ms(4));
 }
 
 p {
@@ -37,8 +37,8 @@ p {
 }
 
 #container {
-  @include pad(4,4);
   @include rhythm(3,0,0,3);
+  @include pad(4,4);
 }
 
 header {
@@ -47,21 +47,20 @@ header {
     right: gutter();
     left: gutter();
   }
-  @include rounded-gradient-box;
+  @include rounded-gradient-box($light-complement-support-color);
 }
 
 #main {
   @include full(10);
   @include pad(1,1,10);
-  @include rounded-gradient-box(#e6e9eb, bottom-to-top);
+  @include rounded-gradient-box($light-complement-support-color, bottom-to-top);
 }
 
 footer {
-  @include adjust-font-size-to($base-font-size * .7);
+  @include adjust-font-size-to(ms(1));
   @include clearfix;
-  // padding-left: rhythm();
   p {
-    @include rhythm(.5,0,0,.5);
+    @include rhythm(.5,0,0,.5, ms(1));
   }
   .mail-contact {
     float: left;
@@ -77,26 +76,29 @@ footer {
   }
 }
 
+.extra-info, .salut {
+  @include adjust-font-size-to(ms(2));
+  color: darken($dark-complement-support-color, 10%);
+}
+
 .extra-info {
-  @include adjust-font-size-to($base-font-size * .9);
-  color: #7F8589;
-  @include margin-leader(2);
-  @include leading-border(1.5px);
+  @include margin-leader(2, ms(2));
+  @include leading-border(1.5px, 1, ms(2));
   border: {
     top: {
       style: dashed;
-      color: #7F8589;
+      color: darken($dark-complement-support-color, 10%);
     }
   }
-
   p {
     @include rhythm(0,0,0,0);
   }
 }
 
 .salut {
-  @include adjust-font-size-to($base-font-size * .9);
-  color: #7F8589;
+  p {
+    @include rhythm(1,0,0,1, ms(2));
+  }
 }
 
 .sans {

@@ -10,7 +10,6 @@
 
 // base
 // $line-height: 1.4 !default;
-$font-color: #4C5053;
 
 // $link-color: #00e !default;
 // $link-hover-color: #06e !default;
@@ -36,5 +35,15 @@ $base-line-height: 20px;  // Used by Compass
 
 // Modular scale:
 // $ratio: $golden;
-$base-size: $base-font-size;
+$base-size: 8px $base-font-size;
 // $class-slug: ms;
+
+
+// color:
+$font-color: #4C5053;
+$base-color: #D7943E; // Beige
+$complement-accent-color: #6BB7BF; // Blue-ish
+$complement-support-color: #8C1F07; // Red
+$dark-complement-support-color: #BF5111; // Orange
+$light-complement-support-color: #F2D888; // Light yellow
+
