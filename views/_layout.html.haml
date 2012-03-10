@@ -41,6 +41,12 @@
       #main{ :role => 'main' }
         = yield
       %footer
+        %p
+          .mail-contact
+            If you have questions or concerns please contact us directly at
+            = mail_to('support@timoco.eu')
+          .twitter-follow= twitter_follow_button('timocoteam')
+
     -# end of #container
 
     -# Javascript at the bottom for fast page loading

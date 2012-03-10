@@ -61,10 +61,6 @@
   .no-cssgradients & {
     @include filter-gradient($from, $to, vertical);
   }
-  padding: {
-    right: gutter();
-    left: gutter();
-  }
   border: {
     style: solid;
     color: darken($color, 10%);
