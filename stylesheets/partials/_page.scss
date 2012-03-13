@@ -27,9 +27,10 @@ h1 {
 
 h2 {
   @include adjust-font-size-to(ms(4));
-  color: $complement-support-color;
+  color: $darkest-base-color;
   text-align: center;
   @include margin-leader(1, ms(4));
+  @include single-text-shadow(lighten($complement-accent-color, 50%), 1px, 1px, 2px);
 }
 
 p {
@@ -40,8 +41,17 @@ img {
   max-width: 100%;
 }
 
+.logo {
+  img {
+    @extend .center;
+    background: white;
+    @include single-box-shadow($darkest-base-color, 0, 0, 30px, -10px);
+
+  }
+}
+
 #container {
-  @include rhythm(3,0,0,3);
+  @include rhythm(2,0,0,2);
   @include pad(4,4);
 }
 
@@ -51,13 +61,13 @@ header {
     right: gutter();
     left: gutter();
   }
-  @include rounded-gradient-box($light-complement-support-color);
+  @include rounded-gradient-box($complement-accent-color);
 }
 
 #main {
   @include full(10);
   @include pad(1,1,10);
-  @include rounded-gradient-box($light-complement-support-color, bottom-to-top);
+  @include rounded-gradient-box($complement-accent-color, bottom-to-top);
 }
 
 footer {
@@ -82,7 +92,7 @@ footer {
 
 .extra-info, .salut {
   @include adjust-font-size-to(ms(2));
-  color: darken($dark-complement-support-color, 10%);
+  color: $darkest-base-color;
 }
 
 .extra-info {
@@ -91,7 +101,7 @@ footer {
   border: {
     top: {
       style: dashed;
-      color: darken($dark-complement-support-color, 10%);
+      color: darken($font-color, 10%);
     }
   }
   p {
@@ -117,7 +127,16 @@ footer {
   @include monospace-family;
 }
 
+.center {
+  margin: {
+    right: auto;
+    left: auto;
+  }
+  display: block;
+}
+
 .meter {
+  @include rhythm(2,0,0,2);
   height: rhythm();
   position: relative;
   background: #555;
