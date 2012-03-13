@@ -36,6 +36,10 @@ p {
   @include rhythm(1,0,0,1);
 }
 
+img {
+  max-width: 100%;
+}
+
 #container {
   @include rhythm(3,0,0,3);
   @include pad(4,4);
