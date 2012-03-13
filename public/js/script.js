@@ -37,6 +37,7 @@ var TIMOCO = {
 
 $(function() {
   TIMOCO.init();
+  $('.video').fitVids();
 });
 
 

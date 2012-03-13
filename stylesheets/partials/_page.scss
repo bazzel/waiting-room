@@ -37,17 +37,23 @@ p {
   @include rhythm(1,0,0,1);
 }
 
-img {
+img, embed, object, video {
   max-width: 100%;
 }
 
 .logo {
+  @include rhythm(2,0,0,2);
   img {
     @extend .center;
     background: white;
     @include single-box-shadow($darkest-base-color, 0, 0, 30px, -10px);
 
   }
+}
+
+.video {
+  @include rhythm(4,0,0,2);
+  @include single-box-shadow($darkest-base-color, 0, 0, 30px, -10px);
 }
 
 #container {
@@ -145,6 +151,7 @@ footer {
   @include single-box-shadow(rgba(#fff, .3), 0, -1px, 1px, 0, true);
   > span {
     $color: rgb(43,194,83);
+    $color: $base-color;
     display: block;
     height: 100%;
     width: 0;
