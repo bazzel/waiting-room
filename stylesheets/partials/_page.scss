@@ -51,7 +51,7 @@ img, embed, object, video {
   }
 }
 
-.video {
+.promo-video {
   @include rhythm(4,0,0,2);
   @include single-box-shadow($darkest-base-color, 0, 0, 30px, -10px);
 }
