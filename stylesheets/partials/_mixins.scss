@@ -56,7 +56,7 @@
 
   // Of course this can only be accomplished by using Modernizr:
   .cssgradients & {
-    @include background-image(linear-gradient($from, $to));
+    @include background(linear-gradient($from, $to));
   }
   .no-cssgradients & {
     @include filter-gradient($from, $to, vertical);

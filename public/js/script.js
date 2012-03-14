@@ -37,6 +37,7 @@ var TIMOCO = {
 
 $(function() {
   TIMOCO.init();
+  TIMOCO.PROGRESS.update('60%');
   $('.video').fitVids();
 });
 
